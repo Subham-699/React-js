@@ -1,0 +1,158 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", "Segoe UI", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: radial-gradient(circle at top, #0f2027, #000000);
+  color: #e0f7ff;
+  min-height: 100vh;
+  padding: 40px;
+  animation: godAura 6s infinite alternate;
+}
+
+/* ===== HEADINGS ===== */
+h1,
+h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8be9ff;
+  text-shadow:
+    0 0 10px #00eaff,
+    0 0 25px #00eaff,
+    0 0 50px #0077ff;
+  animation: powerPulse 2s infinite;
+}
+
+/* ===== CONTAINERS ===== */
+div {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 16px;
+  background: linear-gradient(145deg,
+      rgba(0, 255, 255, 0.08),
+      rgba(0, 0, 0, 0.6));
+  box-shadow:
+    0 0 30px rgba(0, 255, 255, 0.4),
+    inset 0 0 20px rgba(0, 180, 255, 0.2);
+}
+
+/* ===== FORM ===== */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* ===== INPUT ===== */
+input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 2px solid #00eaff;
+  background: rgba(0, 0, 0, 0.7);
+  color: #e0f7ff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 234, 255, 0.5);
+}
+
+input::placeholder {
+  color: #6fdcff;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #001018;
+  background: linear-gradient(135deg, #00eaff, #0077ff);
+  box-shadow:
+    0 0 15px #00eaff,
+    0 0 30px #0077ff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow:
+    0 0 30px #00eaff,
+    0 0 60px #0077ff;
+}
+
+/* ===== NOTES ===== */
+p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow:
+    0 0 20px rgba(0, 255, 255, 0.35),
+    inset 0 0 10px rgba(0, 180, 255, 0.25);
+  animation: floatEnergy 3s ease-in-out infinite;
+}
+
+/* ===== DELETE BUTTON ===== */
+p button {
+  background: linear-gradient(135deg, #ff004c, #ff6a00);
+  color: #fff;
+  box-shadow:
+    0 0 15px #ff004c,
+    0 0 30px #ff6a00;
+}
+
+p button:hover {
+  box-shadow:
+    0 0 30px #ff004c,
+    0 0 60px #ff6a00;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes powerPulse {
+  0% {
+    text-shadow: 0 0 10px #00eaff;
+  }
+
+  100% {
+    text-shadow: 0 0 40px #00eaff;
+  }
+}
+
+@keyframes godAura {
+  0% {
+    background-position: top;
+  }
+
+  100% {
+    background-position: bottom;
+  }
+}
+
+@keyframes floatEnergy {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

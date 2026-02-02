@@ -1,0 +1,30 @@
+{
+  "notes": [
+    {
+      "id": "31c3",
+      "content": "",
+      "important": false
+    },
+    {
+      "id": "1d06",
+      "content": "",
+      "important": false
+    },
+    {
+      "id": "c4a1",
+      "content": "",
+      "important": false
+    },
+    {
+      "id": "bcf2",
+      "content": "",
+      "important": true
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "name": "Ali"
+    }
+  ]
+}
